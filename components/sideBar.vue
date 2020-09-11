@@ -5,13 +5,17 @@
       <div class="title">
         <Icon type="md-calendar" class="icon-style" />博客简介
       </div>
-      <div class="content">
-        本站采用nuxt+node+express+mysql搭建。
-        <br />目前尚在修改测试中，喜欢这款主题的朋友可以先收藏本站。
-        后续源码会更新到github上。
+      <div class="content blog-star">
+        本站完整前后台采用vue+nuxt+iview+vue-particles+node+express+mysql+mavon-editor+element-ui等技术栈搭建,
+        完整源码存放在Github,如果对你有帮助,望请star,谢谢~
       </div>
       <div>
-        <!-- <Icon type="ios-thumbs-up" class="icon-star"/> -->
+        <Icon type="logo-github" class="icon-star" />
+        <a
+          href="https://github.com/qqq408370953/blog-nuxt"
+          style="width:100px; font-size:16px;"
+          target="__blank"
+        >github地址</a>
       </div>
     </div>
     <!-- floor2 -->
@@ -63,20 +67,20 @@ export default {
     },
     categorylist() {
       return this.$store.state.category.list;
-    }
+    },
   },
   methods: {
     gotag(id) {
       this.$router.push({
-        path: "/tag/" + id
+        path: "/tag/" + id,
       });
     },
     godetail(id) {
       this.$router.push({
-        path: "/article/" + id
+        path: "/article/" + id,
       });
-    }
-  }
+    },
+  },
 };
 </script>
 <style lang="less" scoped>
@@ -107,8 +111,6 @@ export default {
     }
 
     .content {
-      font-size: 14px;
-
       .list {
         padding: 5px;
         position: relative;
@@ -125,7 +127,7 @@ export default {
           line-height: 22px;
           text-align: center;
           border-radius: 5px;
-          font-size:12px;
+          font-size: 12px;
         }
 
         .title-content {
@@ -193,5 +195,13 @@ export default {
       margin-right: 5px;
     }
   }
+}
+.blog-star {
+  text-align: left;
+  margin: 8px 0 0;
+  line-height: 22px;
+  font-size: 14px;
+  text-align: justify;
+  text-align-last: left;
 }
 </style>

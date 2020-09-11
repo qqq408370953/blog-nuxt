@@ -3,7 +3,7 @@
     <div class="icp-baseline"></div>
     <div class="icp">
       <div>
-        © 2018-2020 www.itemsblog.com 版权所有
+        © 2018-2020 www.xxx.com 版权所有
         <a
           style="color: #9599a4;text-decoration: none;"
           href="http://www.beian.miit.gov.cn"
